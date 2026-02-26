@@ -1,7 +1,4 @@
-/* ==========================================
-   1. YOUR ORIGINAL HOME PAGE STYLES
-   (Restored to keep your home page the same)
-   ========================================== */
+
 :root {
     --bg-deep-blue: #0a192f;        /* Main background */
     --card-blue: #112240;           /* Card/Section background */
@@ -18,11 +15,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 1.125rem; /* 18px Requirement met */
-    line-height: 1.6;    /* 1.5+ Requirement met */
+    font-size: 1.125rem;
+    line-height: 1.6;
 }
 
-/* Keyboard Navigation Requirement */
+
 :focus {
     outline: 2px solid var(--neon-cyan);
     outline-offset: 4px;
@@ -35,14 +32,14 @@ header {
     border-bottom: 1px solid var(--slate-tech);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers items horizontally */
+    align-items: center;
     text-align: center;
 }
 
 .profile-header {
     display: flex;
     flex-direction: column;
-    align-items: center;    /* Centers Image and H1 vertically */
+    align-items: center;
     justify-content: center;
     gap: 15px;
 }
@@ -137,7 +134,7 @@ article:hover {
     background: #172a45;
 }
 
-/* Clean Article Links (No underline, no blue) */
+
 .card-link {
     display: block;
     text-decoration: none !important;
@@ -153,7 +150,7 @@ article:hover {
 /* --- TYPOGRAPHY --- */
 h1 {
     color: var(--silver-white);
-    font-size: 2.5rem; /* Large text requirement (>24px) */
+    font-size: 2.5rem;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -187,7 +184,7 @@ h2, h3 {
     transform: translateY(-2px);
 }
 
-/* Standard Links (For body/nav) */
+
 a {
     color: var(--neon-cyan);
     text-decoration: none;
@@ -198,30 +195,26 @@ a:hover {
 }
 
 footer {
-    text-align: center;      /* Centers the text horizontally */
-    padding: 40px 20px;
-    font-size: 0.8rem;       /* Makes the text smaller than the 18px body text */
-    color: var(--slate-tech); /* Keeps the metallic/white look */
-    width: 100%;             /* Ensures it spans the full width to center correctly */
-    margin-top: auto;        /* Helps push it to the bottom of the page */
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--slate-tech);
+    width: 100%;
+    margin-top: auto;
 }
 
-/* ==========================================
-   2. ISOLATED AI MODEL PAGE (Wireframe)
-   (Only applies when inside .profile-container)
-   ========================================== */
+/*AI model page*/
 
 .profile-container {
     max-width: 1200px;
     margin: 40px auto;
     display: grid;
-    grid-template-columns: 350px 1fr; /* Matches your PDF wireframe */
+    grid-template-columns: 350px 1fr;
     gap: 50px;
     padding: 0 40px;
     text-align: left;
 }
 
-/* Forces the circle on the profile page */
+
 .profile-container .large-circle {
     width: 280px;
     height: 280px;
@@ -244,6 +237,7 @@ footer {
     object-fit: cover;
     border-radius: 8px;
     border: 1px solid var(--slate-tech);
+    object-position: center 20%;
 }
 
 .profile-container .video-grid {
