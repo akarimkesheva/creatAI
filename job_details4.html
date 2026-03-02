@@ -26,7 +26,7 @@
         <h2 style="color: var(--neon-cyan);">Silver Screen AI</h2>
         <p><strong>Status:</strong> Urgent Hire</p>
         <p><strong>Location:</strong> Fully Remote</p>
-        <a href="mailto:jobs@example.com" class="contact-btn">Apply for Position</a>
+
     </aside>
 
     <main>
@@ -54,8 +54,30 @@
             <h3>Compensation & Perks</h3>
             <p>Competitive salary, cloud-compute credits, and global exposure through our digital marketing network.</p>
         </article>
+
+        <section id="apply-form" style="margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+            <h3>Apply for this Position</h3>
+            <form id="jobForm" onsubmit="processForm(event)">
+                <div style="margin-bottom: 15px;">
+                    <input type="text" id="name" placeholder="Your Name" required style="width: 100%; padding: 10px; background: #1a1a1a; color: white; border: 1px solid var(--slate-tech);">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="email" id="email" placeholder="Your Email" required style="width: 100%; padding: 10px; background: #1a1a1a; color: white; border: 1px solid var(--slate-tech);">
+                </div>
+                <button type="submit" class="contact-btn" style="width: 100%;">Submit Application</button>
+            </form>
+        </section>
     </main>
 </div>
+
+<script>
+    function processForm(event) {
+       event.preventDefault();
+       const name = document.getElementById('name').value;
+       alert("Thank you, " + name + "! Your application has been processed.");
+    }
+</script>
+
 
 <footer>
     <p>&copy; 2026 AI Models Platform</p>
